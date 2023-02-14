@@ -1,0 +1,319 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal_content{
+    height: 214px;
+    width: 791px;
+    background-color: #fff;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+}
+
+/* .modal_content.active{
+    transform: scale(1);
+} */
+
+
+    #mainForm {
+        /* height: 214px;
+        width: 791px; */
+        /* background: #FFFFFF; */
+        /* box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: 8px; */
+    }
+    
+    #groupInp{
+        display: flex;
+    }
+    
+    .formInput{
+        height: 36px; /*Изменил с 38 на 36 */
+        width: 168px; /*Изменил с 170 на 168 */
+        background: #FFFFFF;    
+        border: 1px solid #D1D5DB;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        padding: 0;
+        margin-top: 4px;
+    }
+    
+    ::placeholder{
+        position: absolute;
+        height: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        left: 13px;
+        top:9px
+    }
+    
+    label{
+        width: 170px;
+        height: 62px;
+    }
+    
+    #one_l{
+        margin-left: 23.5px;
+    }
+    
+    #two_l{
+        margin-left: 20px;
+    }
+    
+    #three_l{
+        margin-left: 20px;
+    }
+    
+    #four_l{
+        margin-left: 22px;
+    }
+    
+    
+    #formLabel{
+        width: 745px;
+        height: 24px;
+        margin-top: 24px;
+        margin-right: 24px;
+        margin-left: 23px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    #sendBtn{
+        background-color: #16A34A;
+        color: #FFFFFF;
+        height: 38px;
+        width: 170px;
+        border-width: 0px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 18px 0px 0px 595.5px;
+    }
+    
+    #btnText{
+        height: 16px;
+        width: 86px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .modal_content {
+        height: 254px;
+        width: 669px;
+        /* background: #FFFFFF; */
+        box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+    }
+    
+    #groupInp{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    ::placeholder{
+        position: absolute;
+        height: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        left: 13px;
+        top:9px
+    }
+
+    .formInput {
+        height: 36px; /*Изменил с 38 на 36 */
+        width: 188px; /*Изменил с 170 на 168 */
+        background: #FFFFFF;    
+        border: 1px solid #D1D5DB;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        padding: 0;
+        margin-top: 4px;
+    }
+    #one_l,
+    #two_l,
+    #three_l {
+        width: 190px;
+        height: 62px;
+    }
+    
+    #one_l{
+        margin-left: 24px;
+    }
+    
+    #two_l{
+        margin-left: 26px;
+    }
+    
+    #three_l{
+        margin-left: 29px;
+    }
+    
+    #four_l{
+        margin-top: 20px;
+        margin-left: 24px;
+        width: 406px;
+        height: 62px;
+    }
+    #four{
+        width: 406px;
+        height: 38px;
+    }
+
+    #formLabel{
+        width: 621px;
+        height: 24px;
+        margin-top: 24px;
+        margin-right: 24px;
+        margin-left: 23px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    #sendBtn{
+        position: relative;
+        bottom: 39px;
+        background-color: #16A34A;
+        color: #FFFFFF;
+        height: 38px;
+        width: 186px;
+        border-width: 0px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0px 0px 0px 459px;
+    }
+    
+    #btnText{
+        height: 16px;
+        width: 86px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+
+    .modal_content {
+        height: 472px;
+        width: 355px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+    }
+
+    #groupInp{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    ::placeholder{
+        position: absolute;
+        height: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        left: 13px;
+        top:9px
+    }
+
+    .formInput {
+        height: 36px; /*Изменил с 38 на 36 */
+        width: 313px; /*Изменил с 170 на 168 */
+        background: #FFFFFF;    
+        border: 1px solid #D1D5DB;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        padding: 0;
+        margin-top: 4px;
+    }
+
+    #one_l,
+    #two_l,
+    #three_l {
+        width: 315px;
+        height: 62px;
+    }
+
+    #one_l{
+        margin-left: 24px;
+    }
+    
+    #two_l{
+        margin-top: 20px;
+    }
+    
+    #three_l{
+        margin-top: 20px;
+    }
+    
+    #four_l{
+        margin-top: 20px;
+        width: 315px;
+        height: 62px;
+    }
+    #four{
+        width: 315px;
+        height: 38px;
+    }
+
+    #formLabel{
+        width: 307px;
+        height: 24px;
+        margin-top: 24px;
+        margin-right: 24px;
+        margin-left: 23px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    #sendBtn{
+        position: relative;
+        background-color: #16A34A;
+        color: #FFFFFF;
+        height: 38px;
+        width: 315px;
+        border-width: 0px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 20px 0px 0px 20px;
+    }
+    
+    #btnText{
+        height: 16px;
+        width: 86px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
