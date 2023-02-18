@@ -1,5 +1,4 @@
 import './App.css';
-// import Main from './components/Main';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
 import Modal from './components/Modal';
